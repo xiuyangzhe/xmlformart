@@ -1,0 +1,19 @@
+﻿<Window x:Class="xmlformart.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xmlformart"
+        mc:Ignorable="d"
+        Title="XML格式化" Height="600" Width="800" Icon="xml_96px_1127464_easyicon.net.ico">
+    <Grid Margin="0,0,0,3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="69*"/>
+            <ColumnDefinition Width="448*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="input" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="559" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="357"/>
+        <Button x:Name="button" Content="Formart" Grid.Column="1" HorizontalAlignment="Left" Margin="251.298,270,0,0" VerticalAlignment="Top" Width="61.702" Height="56" Click="button_Click" Background="{x:Null}"/>
+        <TextBox x:Name="output" HorizontalAlignment="Left" Height="559" Margin="313,0,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="373" Grid.Column="1"/>
+
+    </Grid>
+</Window>
